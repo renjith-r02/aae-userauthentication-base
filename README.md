@@ -2,6 +2,14 @@
 
 Enterprise-style tutorial repository for building a secure authentication microservice (Java 17, Maven) with JWT, refresh token rotation, RBAC, Redis-backed token invalidation, and governance-driven delivery.
 
+## Project Overview
+
+- **Purpose:** Deliver a production-oriented `AuthService3` authentication microservice blueprint and implementation path.
+- **Core capabilities:** User registration/login, JWT issuance and validation, refresh token rotation with replay protection, logout/session invalidation, and RBAC enforcement.
+- **Technology stack target:** Spring Boot (Java 17, Maven) with PostgreSQL for persistence and Redis for token/session state and rate-limiting support.
+- **Security and governance alignment:** OWASP-oriented secure design, JWT best practices, deny-by-default RBAC, and strict prohibition of hardcoded secrets.
+- **Expected outputs:** Architecture diagrams, API contracts/specs, unit/integration/security tests, and deployment assets (Docker/Kubernetes).
+
 ## Software Installation and Tooling (Start Here)
 
 ### Required
