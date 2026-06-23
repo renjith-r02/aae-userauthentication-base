@@ -1,4 +1,4 @@
-# AuthService3
+# AuthService
 
 Enterprise-style tutorial repository for building a secure authentication microservice (Java 17, Maven) with JWT, refresh token rotation, RBAC, Redis-backed token invalidation, and governance-driven delivery.
 
@@ -172,8 +172,11 @@ The following prompts are reference content for artifact generation.
 ```text
 #file:diagram-generation.agent.md #file:architecture-planning.agent.md Using the requirements defined in #file:authentication_service_requirements.md create component diagram, sequence diagram, class diagram, deployment diagram in mermaid format and create md files in .github/docs/architecture folder . Create api contracts in swagger format inside the same folder. Follow the naming conventions as defined in #file:architecture-planning.agent.md
 ```
-
-### 2) Spring Boot implementation and test artifact generation prompt
+### 2)Create PostMan collection
+```text
+create a postman collection for the application to be imported to post man for all the apis. Read the postman collection file. create an postman environment file. Also, post request scripts to save the values in variables of environment files.
+```
+### 3) Spring Boot implementation and test artifact generation prompt
 
 ```text
 #file:architecture-planning.agent.md Refer the project requirements in the #file:authentication_service_requirements.md architecture and coding standards in #file:architecture-planning.agent.md Refer the following architecture diagram #file:class-diagram.md #file:sequence-diagram.md #file:deployment-diagram.md to create a Spring Boot application with Unit , Integration and Jmeter testing scripts included for deployment to Kubernetes cluster. Application uses PostGres as DB, Redis for caching
@@ -181,4 +184,4 @@ The following prompts are reference content for artifact generation.
 
 ## Current State Note
 
-The repository currently contains a minimal Java scaffold (`org.example.Main`) and documentation/guidance assets. The service implementation above is the target outcome.
+The repository currently contains a minimal Java  assets. The service implementation above is the target outcome.
